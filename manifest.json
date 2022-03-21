@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "Infinite Scroll für Kleinanzeigen",
+  "version": "0.0",
+
+  "description": "Ermöglicht es bei ebay Kleinanzeigen einfach zu scrollen um neue Anzeigen zu sehen, anstatt neue Seiten laden zu müssen.",
+
+  "icons": {
+    "48": "icons/arrow-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.ebay-kleinanzeigen.de/*"],
+      "js": ["ext.js"]
+    }
+  ],
+  "permissions": [
+    "https://i.ebayimg.com/*"
+  ]
+  
+
+}
